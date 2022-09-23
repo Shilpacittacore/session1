@@ -1,0 +1,16 @@
+<aura:component controller="SampleApexcontroller" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="tempstr" type="String"/>
+    <aura:attribute name="returnstr" type="String"/>
+    <aura:attribute name="recordId" type="String"/>
+    <lightning:input label="Enter your name" value="{!v.tempstr}"/>
+    <br/>
+    <br/>
+    <lightning:button variant="Brand" label="call" title="Brand Action" onclick="{!c.callApex}"/>
+    <br/>
+    This record is: {!v.recordId}
+    This is from Apex:
+    <br/>
+    {!v.returnstr}
+    <br/>
+    <br/>
+</aura:component>

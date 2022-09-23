@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<lightning:inputField fieldName="Name" />
+    
+    <lightning:buttonGroup>
+        <lightning:button label="1" />
+        <lightning:button label="2" />
+        <lightning:button label="3" />
+        <lightning:button label="+" onclick="{!c.addclick}"/>
+    </lightning:buttonGroup>
+    
+</aura:component>

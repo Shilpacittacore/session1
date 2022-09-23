@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+               controller="contactControllercls"      
+               access= "global" >
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="mydata" type="Object"/>
+    <aura:attribute name="mycolumns" type="List"/>
+    <aura:handler name="init" value="{!this }" action="{!c.init }"/>
+    This record is: {!v.recordId}
+    <br/>
+    <lightning:datatable data="{!v.mydata }"
+        columns="{!v.mycolumns }"
+        keyField="Id"
+        hideCheckboxColumn="true"/>
+</aura:component>

@@ -1,0 +1,43 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+
+    <aura:attribute name="isAdd" type="boolean" default="false" />
+<aura:attribute name="isSub" type="boolean" default="false" />
+<aura:attribute name="isMul" type="boolean" default="false" />
+    <aura:attribute name="isDiv" type="boolean" default="false" />
+    <aura:attribute name="isMod" type="boolean" default="false" />
+    <aura:attribute name="isEqual" type="boolean" default="false" />
+        <br/>
+    <lightning:buttonGroup>
+ <lightning:button label="AC" onclick="{!c.Clear}"/>
+ <lightning:button label="mod" onclick="{!c.mod}" />
+ <lightning:button label="div" onclick="{!c.div}" />
+        <br/>
+        
+<lightning:button label="7" onclick="{!c.seven}" />
+<lightning:button label="8" onclick="{!c.eight}" />
+<lightning:button label="9" onclick="{!c.nine}" />
+        <lightning:button label="mul" onclick="{!c.mul}" />
+        <br/>
+        <lightning:button label="4" onclick="{!c.four}" />
+<lightning:button label="5" onclick="{!c.five}" />
+<lightning:button label="6" onclick="{!c.six}" />
+        <lightning:button label="sub" onclick="{!c.sub}" />
+        <br/>
+        <lightning:button label="1" onclick="{!c.one}" />
+<lightning:button label="2" onclick="{!c.two}" />
+<lightning:button label="3" onclick="{!c.three}" />
+        <lightning:button label="add" onclick="{!c.add}" />
+        <br/>
+        <lightning:button label="0" onclick="{!c.zero}" />
+        <lightning:button label="equals" onclick="{!c.equal}" />
+        </lightning:buttonGroup>
+    
+
+        
+        
+        
+        
+        
+
+
+</aura:component>
